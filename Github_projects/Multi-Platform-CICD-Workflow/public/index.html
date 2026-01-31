@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi-Environment CI/CD Pipeline</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        
+        .container {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            padding: 60px;
+            max-width: 800px;
+            text-align: center;
+        }
+        
+        h1 {
+            color: #333;
+            font-size: 3em;
+            margin-bottom: 20px;
+            animation: fadeInDown 1s;
+        }
+        
+        .badge {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 50px;
+            font-weight: bold;
+            margin: 10px;
+            animation: fadeIn 1.5s;
+        }
+        
+        .environment {
+            font-size: 1.2em;
+            color: #666;
+            margin: 30px 0;
+        }
+        
+        .environment span {
+            color: #667eea;
+            font-weight: bold;
+        }
+        
+        .info {
+            background: #f8f9fa;
+            border-radius: 10px;
+            padding: 30px;
+            margin-top: 30px;
+            text-align: left;
+        }
+        
+        .info h2 {
+            color: #333;
+            margin-bottom: 15px;
+        }
+        
+        .info ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .info li {
+            padding: 10px 0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        
+        .info li:last-child {
+            border-bottom: none;
+        }
+        
+        .info li strong {
+            color: #667eea;
+        }
+        
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        
+        .links {
+            margin-top: 30px;
+        }
+        
+        .links a {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            padding: 12px 30px;
+            border-radius: 25px;
+            text-decoration: none;
+            margin: 10px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .links a:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🚀 CI/CD Pipeline Active</h1>
+        
+        <div class="badge">Multi-Environment</div>
+        <div class="badge">AWS ECR/EC2</div>
+        <div class="badge">GitHub Actions</div>
+        <div class="badge">Docker</div>
+        
+        <div class="environment">
+            Environment: <span id="env">PRODUCTION</span>
+        </div>
+        
+        <div class="info">
+            <h2>Pipeline Information</h2>
+            <ul>
+                <li><strong>Production:</strong> adelekeadebowale.com (Port 3000)</li>
+                <li><strong>Staging:</strong> staging.adelekeadebowale.com (Port 3001)</li>
+                <li><strong>Development:</strong> dev.adelekeadebowale.com (Port 3002)</li>
+                <li><strong>Container:</strong> Docker with NGINX</li>
+                <li><strong>SSL:</strong> Let's Encrypt (Auto-renewal)</li>
+                <li><strong>Deployment:</strong> Automated via GitHub Actions</li>
+            </ul>
+        </div>
+        
+        <div class="links">
+            <a href="https://github.com/bowale01/Multi-Platform-CICD-Workflow" target="_blank">GitHub Repository</a>
+            <a href="https://github.com/bowale01" target="_blank">Developer Profile</a>
+        </div>
+    </div>
+    
+    <script>
+        // Detect environment based on hostname
+        const hostname = window.location.hostname;
+        const envElement = document.getElementById('env');
+        
+        if (hostname.includes('dev.')) {
+            envElement.textContent = 'DEVELOPMENT';
+            envElement.style.color = '#28a745';
+        } else if (hostname.includes('staging.')) {
+            envElement.textContent = 'STAGING';
+            envElement.style.color = '#ffc107';
+        } else {
+            envElement.textContent = 'PRODUCTION';
+            envElement.style.color = '#dc3545';
+        }
+    </script>
+</body>
+</html>
