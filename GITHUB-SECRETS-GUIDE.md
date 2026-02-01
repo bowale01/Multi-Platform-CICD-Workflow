@@ -1,6 +1,6 @@
 # GitHub Secrets Configuration Guide
 
-## Required Secrets for Multi-Environment Pipeline
+## Required Secrets for Multi-Platform Pipeline
 
 Go to: **https://github.com/bowale01/Multi-Platform-CICD-Workflow/settings/secrets/actions**
 

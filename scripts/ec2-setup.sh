@@ -1,12 +1,12 @@
 #!/bin/bash
 
-# EC2 Initial Setup Script for Multi-Environment CI/CD Pipeline
+# EC2 Initial Setup Script for Multi-Platform CI/CD Pipeline
 # Run this script on your EC2 instance after initial launch
 
 set -e
 
 echo "=========================================="
-echo "EC2 Multi-Environment Setup"
+echo "EC2 Multi-Platform Setup"
 echo "=========================================="
 
 # Update system

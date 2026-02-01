@@ -1,4 +1,4 @@
-# Multi-Plartform AWS ECR CI/CD Pipeline for Cloud Applications
+# Multi-Platform AWS ECR CI/CD Pipeline for Cloud Applications
 
 ![CI/CD Status](https://img.shields.io/github/actions/workflow/status/bowale01/Multi-Platform-CICD-Workflow/deploy-prod.yml?label=Production%20Pipeline&style=for-the-badge&logo=github-actions&logoColor=white)
 ![Staging Status](https://img.shields.io/github/actions/workflow/status/bowale01/Multi-Platform-CICD-Workflow/deploy-staging.yml?label=Staging%20Pipeline&style=for-the-badge&logo=github-actions&logoColor=white)
@@ -9,7 +9,7 @@
 ![Docker](https://img.shields.io/badge/Docker-2CA5E0?style=for-the-badge&logo=docker&logoColor=white)
 ![NGINX](https://img.shields.io/badge/NGINX-009639?style=for-the-badge&logo=nginx&logoColor=white)
 
-A production-grade multi-environment CI/CD pipeline implementation that automatically builds, pushes, and deploys containerized applications across development, staging, and production environments using GitHub Actions, Amazon ECR/EC2, NGINX reverse proxy, and SSL automation.
+A production-grade multi-platform CI/CD pipeline implementation that automatically builds, pushes, and deploys containerized applications across development, staging, and production environments using GitHub Actions, Amazon ECR/EC2, NGINX reverse proxy, and SSL automation.
 
 **Live Production:** [adelekeadebowale.com](https://adelekeadebowale.com) — *Production environment* 🚀  
 **Live Staging:** [staging.adelekeadebowale.com](https://staging.adelekeadebowale.com) — *Staging environment* 🔧  
@@ -21,16 +21,16 @@ A production-grade multi-environment CI/CD pipeline implementation that automati
 
 This advanced CI/CD pipeline automatically deploys containerized applications across three isolated environments (development, staging, production) using separate GitHub Actions workflows, dedicated Docker containers, and subdomain-based routing. The implementation showcases:
 
-- **Multi-Environment Architecture:** Complete isolation between dev, staging, and production environments
+- **Multi-Platform Architecture:** Complete isolation between dev, staging, and production environments
 - **Automated Branch-Based Deployments:** Each environment deploys from its dedicated Git branch
 - **SSL-Secured Subdomains:** Full HTTPS implementation across all environments with Let's Encrypt
 - **NGINX Reverse Proxy:** Intelligent subdomain routing to appropriate container ports
 - **Container Orchestration:** Multiple containers running simultaneously on a single EC2 instance
 - **Production-Grade Security:** Comprehensive secrets management and secure deployment practices
 
-## Multi-Environment Architecture
+## Multi-Platform Architecture
 
-The pipeline implements a sophisticated multi-environment deployment strategy:
+The pipeline implements a sophisticated multi-platform deployment strategy:
 
 ```
 GitHub Branches → GitHub Actions → Docker Tags → ECR → EC2 Containers → NGINX → Subdomains
@@ -87,7 +87,7 @@ GitHub Branches → GitHub Actions → Docker Tags → ECR → EC2 Containers �
 
 ## Architecture Overview
 
-### Multi-Environment Flow
+### Multi-Platform Flow
 
 ```
 Development → Staging → Production
@@ -525,7 +525,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-*This documentation represents a production-ready implementation of multi-environment CI/CD practices suitable for enterprise applications.*
+*This documentation represents a production-ready implementation of multi-platform CI/CD practices suitable for enterprise applications.*
 | **Production** | `main` | `app-prod` | `adelekeadebowale.com` | 3000 | ✅ Let's Encrypt | Live production site |
 | **Staging** | `staging` | `app-staging` | `staging.adelekeadebowale.com` | 3001 | ✅ Let's Encrypt | Pre-production testing |
 | **Development** | `develop` | `app-dev` | `dev.adelekeadebowale.com` | 3002 | ✅ Let's Encrypt | Development and feature testing |
@@ -797,7 +797,7 @@ sudo certbot certificates
 
 ## Performance Metrics
 
-| Metric | Single Environment | Multi-Environment | Improvement |
+| Metric | Single Environment | Multi-Platform | Improvement |
 |--------|-------------------|-------------------|-------------|
 | **Deployment Flexibility** | 1 environment | 3 isolated environments | 300% increase |
 | **Testing Capability** | Production only | Dev + Staging + Prod | Complete SDLC coverage |

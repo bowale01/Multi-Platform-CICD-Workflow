@@ -1,6 +1,6 @@
 # Quick Start Guide
 
-Get your multi-environment CI/CD pipeline running in under 30 minutes!
+Get your multi-platform CI/CD pipeline running in under 30 minutes!
 
 ## Prerequisites Checklist
 
@@ -244,7 +244,7 @@ After following this guide, you should have:
 - [ ] Container orchestration on EC2
 - [ ] NGINX reverse proxy routing
 
-**Congratulations!** 🎉 You now have a production-grade multi-environment CI/CD pipeline!
+**Congratulations!** 🎉 You now have a production-grade multi-platform CI/CD pipeline!
 
 ---
 
