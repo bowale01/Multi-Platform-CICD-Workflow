@@ -1,0 +1,9 @@
+<svg width="600" height="400" xmlns="http://www.w3.org/2000/svg">
+  <rect width="600" height="400" fill="#0f2942"/>
+  <text x="50%" y="50%" font-family="Arial, sans-serif" font-size="24" fill="#60a5fa" text-anchor="middle" dominant-baseline="middle">
+    Project Screenshot Coming Soon
+  </text>
+  <text x="50%" y="60%" font-family="Arial, sans-serif" font-size="16" fill="#ffffff" text-anchor="middle" dominant-baseline="middle">
+    Deploy to AWS and add your screenshot
+  </text>
+</svg>
