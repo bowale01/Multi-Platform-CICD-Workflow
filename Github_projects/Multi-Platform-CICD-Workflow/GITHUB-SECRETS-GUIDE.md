@@ -42,9 +42,11 @@ Example: wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
 ## 2. ECR (Container Registry) Secrets
 
 ### ECR_REGISTRY
-**Value:** `743508003148.dkr.ecr.us-east-1.amazonaws.com`
+**Value:** `<YOUR_AWS_ACCOUNT_ID>.dkr.ecr.us-east-1.amazonaws.com`
 
-This is your ECR registry URL (already created).
+**How to get it:**
+- Run: `aws sts get-caller-identity --query Account --output text`
+- Format: `ACCOUNT_ID.dkr.ecr.us-east-1.amazonaws.com`
 
 ---
 
@@ -58,9 +60,11 @@ This is your ECR repository name (already created).
 ## 3. EC2 (Server) Secrets
 
 ### EC2_PUBLIC_IP
-**Value:** `184.72.153.228`
+**Value:** `<YOUR_EC2_PUBLIC_IP>`
 
-This is your EC2 instance's public IP address.
+**How to get it:**
+- AWS Console → EC2 → Instances → Your Instance → Public IPv4 address
+- Or run: `aws ec2 describe-instances --query "Reservations[*].Instances[*].PublicIpAddress" --output text`
 
 ---
 
@@ -91,13 +95,13 @@ MIIEpAIBAAKCAQEA...
 
 ## Quick Setup Checklist
 
-- [ ] AWS_ACCESS_KEY_ID
-- [ ] AWS_SECRET_ACCESS_KEY  
+- [ ] AWS_ACCESS_KEY_ID = `<your-aws-access-key>`
+- [ ] AWS_SECRET_ACCESS_KEY = `<your-aws-secret-key>`
 - [ ] AWS_REGION = `us-east-1`
-- [ ] ECR_REGISTRY = `743508003148.dkr.ecr.us-east-1.amazonaws.com`
+- [ ] ECR_REGISTRY = `<account-id>.dkr.ecr.us-east-1.amazonaws.com`
 - [ ] ECR_REPOSITORY = `multi-env-pipeline`
-- [ ] EC2_PUBLIC_IP = `184.72.153.228`
-- [ ] EC2_SSH_PRIVATE_KEY = (contents of your .pem file)
+- [ ] EC2_PUBLIC_IP = `<your-ec2-ip>`
+- [ ] EC2_SSH_PRIVATE_KEY = `<contents-of-your-pem-file>`
 
 ---
 

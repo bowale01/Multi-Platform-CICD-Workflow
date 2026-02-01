@@ -37,7 +37,7 @@ provision_cert() {
     local domain=$1
     
     echo "Provisioning certificate for $domain..."
-    certbot --nginx -d "$domain" --non-interactive --agree-tos --email debolek4dem@gmail.com
+    certbot --nginx -d "$domain" --non-interactive --agree-tos --email YOUR_EMAIL@example.com
     
     if [ $? -eq 0 ]; then
         echo "✓ Certificate provisioned for $domain"

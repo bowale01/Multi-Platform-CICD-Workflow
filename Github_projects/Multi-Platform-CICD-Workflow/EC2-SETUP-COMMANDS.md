@@ -2,7 +2,7 @@
 
 ## Connect to EC2
 ```bash
-ssh -i /path/to/your-key.pem ubuntu@184.72.153.228
+ssh -i /path/to/your-key.pem ubuntu@<YOUR_EC2_PUBLIC_IP>
 ```
 
 ## Once connected, run these commands:
@@ -73,10 +73,10 @@ sudo systemctl reload nginx
 ### 5. Provision SSL certificates
 ```bash
 # For dev subdomain
-sudo certbot --nginx -d dev.adelekeadebowale.com --non-interactive --agree-tos --email debolek4dem@gmail.com
+sudo certbot --nginx -d dev.adelekeadebowale.com --non-interactive --agree-tos --email YOUR_EMAIL@gmail.com
 
 # For staging subdomain
-sudo certbot --nginx -d staging.adelekeadebowale.com --non-interactive --agree-tos --email debolek4dem@gmail.com
+sudo certbot --nginx -d staging.adelekeadebowale.com --non-interactive --agree-tos --email YOUR_EMAIL@gmail.com
 ```
 
 ### 6. Verify certbot auto-renewal
