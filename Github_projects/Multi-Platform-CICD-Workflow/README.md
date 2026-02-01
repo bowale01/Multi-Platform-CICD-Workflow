@@ -11,9 +11,9 @@
 
 A production-grade multi-environment CI/CD pipeline implementation that automatically builds, pushes, and deploys containerized applications across development, staging, and production environments using GitHub Actions, Amazon ECR/EC2, NGINX reverse proxy, and SSL automation.
 
-**Live Production:** [adelekeadebowale.com](https://adelekeadebowale.com) — *Production environment*  
-**Live Staging:** [staging.adelekeadebowale.com](https://staging.adelekeadebowale.com) — *Staging environment*  
-**Live Development:** [dev.adelekeadebowale.com](https://dev.adelekeadebowale.com) — *Development environment*
+**Live Production:** [adelekeadebowale.com](https://adelekeadebowale.com) — *Production environment* 🚀  
+**Live Staging:** [staging.adelekeadebowale.com](https://staging.adelekeadebowale.com) — *Staging environment* 🔧  
+**Live Development:** [dev.adelekeadebowale.com](https://dev.adelekeadebowale.com) — *Development environment* 💻
 
 > ✨ **All environments are live and operational!** This project demonstrates enterprise-level DevOps practices with complete environment isolation, automated SSL management, subdomain routing, and production deployment strategies that mirror real-world cloud infrastructure implementations.
 
