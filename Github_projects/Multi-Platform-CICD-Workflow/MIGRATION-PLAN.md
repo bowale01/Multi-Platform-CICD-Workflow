@@ -110,7 +110,7 @@ aws ecr create-repository \
     --tags Key=Environment,Value=multi-env
 ```
 
-**Output to save:** Repository URI (e.g., `123456789012.dkr.ecr.us-east-1.amazonaws.com/multi-env-pipeline`)
+**Output to save:** Repository URI (e.g., `<YOUR_ACCOUNT_ID>.dkr.ecr.us-east-1.amazonaws.com/multi-env-pipeline`)
 
 ### Step 2: Create Branch Structure
 ```bash
