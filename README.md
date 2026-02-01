@@ -1,4 +1,4 @@
-# Multi-Environment AWS ECR CI/CD Pipeline for Cloud Applications
+# Multi-Plartform AWS ECR CI/CD Pipeline for Cloud Applications
 
 ![CI/CD Status](https://img.shields.io/github/actions/workflow/status/bowale01/Multi-Platform-CICD-Workflow/deploy-prod.yml?label=Production%20Pipeline&style=for-the-badge&logo=github-actions&logoColor=white)
 ![Staging Status](https://img.shields.io/github/actions/workflow/status/bowale01/Multi-Platform-CICD-Workflow/deploy-staging.yml?label=Staging%20Pipeline&style=for-the-badge&logo=github-actions&logoColor=white)
