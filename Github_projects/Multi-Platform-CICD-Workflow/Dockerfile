@@ -3,11 +3,11 @@ FROM nginx:alpine
 
 # Add labels for metadata
 LABEL maintainer="Adebowale Adeleke"
-LABEL description="Multi-environment CI/CD pipeline static site"
+LABEL description="Multi-environment CI/CD pipeline - Adeleke Portfolio"
 LABEL version="1.0.0"
 
-# Copy static HTML file to NGINX default directory
-COPY public/index.html /usr/share/nginx/html/index.html
+# Copy all portfolio files to NGINX html directory
+COPY public/ /usr/share/nginx/html/
 
 # Expose port 80
 EXPOSE 80
