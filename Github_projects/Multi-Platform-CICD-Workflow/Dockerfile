@@ -9,6 +9,9 @@ LABEL version="1.0.0"
 # Copy all portfolio files to NGINX html directory
 COPY public/ /usr/share/nginx/html/
 
+# Fix permissions for NGINX
+RUN chmod -R 755 /usr/share/nginx/html/
+
 # Expose port 80
 EXPOSE 80
 
