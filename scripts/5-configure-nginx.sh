@@ -1,12 +1,12 @@
 #!/bin/bash
 
-# Script to configure NGINX on EC2 for multi-environment setup
+# Script to configure NGINX on EC2 for multi-platform setup
 # Run this script ON YOUR EC2 INSTANCE
 
 set -e
 
 echo "=========================================="
-echo "Configuring NGINX for Multi-Environment"
+echo "Configuring NGINX for Multi-Platform"
 echo "=========================================="
 echo ""
 

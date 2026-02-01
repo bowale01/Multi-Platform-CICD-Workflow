@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Script to create Git branch structure for multi-environment pipeline
+# Script to create Git branch structure for multi-platform pipeline
 
 set -e
 

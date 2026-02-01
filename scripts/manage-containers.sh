@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Container Management Script
-# Useful commands for managing multi-environment containers
+# Useful commands for managing multi-platform containers
 
 # Colors for output
 GREEN='\033[0;32m'

@@ -11,7 +11,7 @@ BLUE='\033[0;34m'
 NC='\033[0m' # No Color
 
 echo -e "${BLUE}=========================================="
-echo "Multi-Environment CI/CD Pipeline Status"
+echo "Multi-Platform CI/CD Pipeline Status"
 echo -e "==========================================${NC}"
 echo ""
 

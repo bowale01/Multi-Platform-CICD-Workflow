@@ -1,6 +1,6 @@
 # Setup Checklist
 
-Use this checklist to track your progress setting up the multi-environment CI/CD pipeline.
+Use this checklist to track your progress setting up the multi-platform CI/CD pipeline.
 
 ## Pre-Setup Requirements
 
@@ -306,4 +306,4 @@ If something isn't working:
 **Difficulty Level:** Intermediate  
 **Support:** See documentation in docs/ folder
 
-**Congratulations!** 🎉 When all checkboxes are complete, you have a production-grade multi-environment CI/CD pipeline!
+**Congratulations!** 🎉 When all checkboxes are complete, you have a production-grade multi-platform CI/CD pipeline!

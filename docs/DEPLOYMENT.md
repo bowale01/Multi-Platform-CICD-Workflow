@@ -1,6 +1,6 @@
 # Deployment Guide
 
-This guide walks you through deploying your multi-environment CI/CD pipeline from scratch.
+This guide walks you through deploying your multi-platform CI/CD pipeline from scratch.
 
 ## Quick Start (TL;DR)
 

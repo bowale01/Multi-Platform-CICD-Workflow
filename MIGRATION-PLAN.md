@@ -1,4 +1,4 @@
-# Migration Plan: From Single-Environment to Multi-Environment Pipeline
+# Migration Plan: From Single-Environment to Multi-Platform Pipeline
 
 ## Current State Analysis
 
@@ -11,7 +11,7 @@
 - **DNS:** Route 53 managed
 - **SSL:** Let's Encrypt
 
-### New Multi-Environment Setup
+### New Multi-Platform Setup
 - **Repository:** bowale01/Multi-Platform-CICD-Workflow
 - **Application:** Static NGINX site (simpler than React)
 - **Container Registry:** AWS ECR (more AWS-native)

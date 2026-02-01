@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Script to create AWS ECR repository for multi-environment pipeline
+# Script to create AWS ECR repository for multi-platform pipeline
 # Region: us-east-1
 
 set -e
